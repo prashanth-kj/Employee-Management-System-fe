@@ -24,7 +24,7 @@ function Employee() {
     try {
      
         let res= await AxiosService.get(`/admin/employee/${params.id}/tasks`)
-        console.log(res)
+        
         if(res.status==200){
             setTasks(res.data.tasks)
         }
@@ -51,7 +51,7 @@ function Employee() {
         try {
             let res = await AxiosService.get(`/admin/employee/${params.id}`)
              setEmployee(res.data.employee)
-             console.log(res)
+            
         } catch (error) {
             console.log(error)
            toast.error(error.response.data.message || "Error Occured")

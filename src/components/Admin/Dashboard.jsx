@@ -13,7 +13,7 @@ function Dashboard() {
    const getEmployees=async()=>{
     try {
        let res = await AxiosService.get('/admin/employees')
-       console.log(res)
+       
        setEmployees(res.data.employees)
     } catch (error) {
       console.log(error)

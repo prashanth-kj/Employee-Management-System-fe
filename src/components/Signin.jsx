@@ -21,10 +21,10 @@ function Signin() {
               email,
               password
            })
-           console.log(res)
-            if(res.status==201){
+          
+              if(res.status==201){
               
-                console.log("login sucessfull")
+                
                     toast.success(res.data.message);
                   sessionStorage.setItem('token',res.data.token);
                   sessionStorage.setItem('employeeData',JSON.stringify(res.data.employee))

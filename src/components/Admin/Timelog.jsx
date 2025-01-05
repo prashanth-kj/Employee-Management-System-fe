@@ -15,7 +15,7 @@ function Timelog() {
     try {
       const res = await AxiosService.get(`/admin/employee/timelog/${params.id}`);
       setTimelogs(res.data.timelog.timelogs);
-      console.log(res.data.timelog.timelogs)
+      
      
     } catch (error) {
       console.error("Error fetching timelog data:", error);

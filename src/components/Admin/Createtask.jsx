@@ -22,7 +22,7 @@ function Createtask() {
                 project,
                 deadline
             })
-            console.log(res)
+           
             if(res.status==201){
                 toast.success(res.data.message)
                 navigate('/admin/tasks')

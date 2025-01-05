@@ -14,7 +14,7 @@ function Taskcard() {
     const getTask=async(req,res)=>{
         try {
             let res = await AxiosService.get(`/task/${params.id}`)
-            console.log(res)
+           
             setTask(res.data.task)
         } catch (error) {
             console.log(error)
@@ -24,7 +24,7 @@ function Taskcard() {
     const updatedTask = async(status)=>{
         try {
             let res = await AxiosService.put(`/task/${params.id}/status/${status}`)
-            console.log(res)
+            
             if(res.status==200){
                  toast.success(res.data.message)
                  navigate('/employee/tasks')

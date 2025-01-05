@@ -9,11 +9,11 @@ function Tasks() {
    
    const [tasks,setTasks]=useState([])
     let navigate =useNavigate()
-    
+
    const getTasks=async()=>{
         try {
             let res = await AxiosService.get('/task/list')
-            console.log(res.data.getTasks)
+           
             setTasks(res.data.getTasks)
 
         } catch (error) {

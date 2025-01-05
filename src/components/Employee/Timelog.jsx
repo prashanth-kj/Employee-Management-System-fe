@@ -10,7 +10,7 @@ function Timelog() {
    const getTimelog=async()=>{
      try {
         let res = await AxiosService.get('/timelog/list')
-        console.log(res.data.timeLogs)
+        
         setTimelogs(res.data.timeLogs)
      } catch (error) {
         console.log(error)

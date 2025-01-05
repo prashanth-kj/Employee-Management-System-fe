@@ -11,7 +11,7 @@ function Performance() {
   const getData = async () => {
     try {
       let res = await AxiosService.get('/admin/employee/performance');
-      console.log(res);
+    
       setEmployees(res.data.employeePerformance);
     } catch (error) {
       console.log(error);

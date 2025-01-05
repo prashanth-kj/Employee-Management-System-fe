@@ -14,7 +14,7 @@ let navigate =useNavigate()
 const getTasks=async()=>{
       try {
          let res = await AxiosService.get('/admin/employee/tasks')
-         console.log(res)
+        
          setTasks(res.data.tasks)
       } catch (error) {
         console.log(error)

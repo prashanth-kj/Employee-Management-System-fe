@@ -15,7 +15,7 @@ function Edit() {
    const getData=async()=>{
     try {
          let res = await AxiosService.get(`/admin/employee/${params.id}`)
-         console.log(res)
+         
         if(res.status==200){
             setName(res.data.employee.name)
             setEmail(res.data.employee.email)

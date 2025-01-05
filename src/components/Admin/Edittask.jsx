@@ -38,7 +38,7 @@ function Edittask() {
     const getTask=async()=>{
         try {
              let res =await AxiosService.get(`/admin/employee/task/${params.id}`)
-             console.log(res)
+            
              if(res.status==200){
                setTitle(res.data.task.title)
                setDescription(res.data.task.description)
@@ -60,6 +60,7 @@ function Edittask() {
             getTask()
           }
       },[])
+      
   return <>
    
    <div className='container'>
