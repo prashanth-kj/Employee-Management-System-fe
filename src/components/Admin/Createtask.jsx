@@ -34,6 +34,7 @@ function Createtask() {
 
   return <>
     <div className='container'>
+       <h2 className='text-center'>Create task</h2>
        <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Title</Form.Label>
