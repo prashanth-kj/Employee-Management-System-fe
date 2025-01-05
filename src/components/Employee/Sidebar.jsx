@@ -8,7 +8,6 @@ import { CgProfile } from "react-icons/cg";
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useNavigate } from 'react-router-dom';
 
-
 function Sidebar() {
 
       let employeeData=JSON.parse(sessionStorage.getItem('employeeData'))
